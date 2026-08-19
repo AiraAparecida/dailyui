@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DailyUI 1 - Sign up</string>
+    <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="gostaria_receber_newsletter">Gostaria de receber newsletter e outras informações
+    promocionais."></string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="finalicar_cartao_de_credito">Finalizar Cartão de crédito</string>
+
+</resources>
