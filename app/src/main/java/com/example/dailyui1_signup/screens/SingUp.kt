@@ -23,26 +23,32 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.dailyui1_signup.R
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import com.example.dailyui1_signup.components.ExtendedIcons
+import com.example.dailyui1_signup.components.Visibility
+import com.example.dailyui1_signup.components.VisibilityOff
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SingUp(navController: NavHostController) {
     var nome by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
-    var senha by remember { mutableStateOf("") }
+    var password by remember { mutableStateOf("") }
+    var passwordVisibility by remember { mutableStateOf(false) }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
@@ -90,11 +96,21 @@ fun SingUp(navController: NavHostController) {
             )
 
             TextField(
-                value = senha,
-                onValueChange = {senha = it},
+                value = password,
+                onValueChange = { password = it },
                 label = { Text("Senha") },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                visualTransformation = if (passwordVisibility) VisualTransformation.None else PasswordVisualTransformation(),
+
+                trailingIcon = {
+                    val icon = if (passwordVisibility) ExtendedIcons.Visibility else ExtendedIcons.VisibilityOff
+                    val description = if (passwordVisibility) "Mostar senha" else "Ocultar"
+                    IconButton(onClick = { passwordVisibility = !passwordVisibility }) {
+                        Icon(imageVector = icon, contentDescription = description)
+                    }
+                }
             )
+
             Spacer(modifier = Modifier.height(6.dp))
 
             Text(text = stringResource(R.string.gostaria_receber_newsletter))
