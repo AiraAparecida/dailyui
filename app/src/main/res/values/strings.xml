@@ -3,6 +3,7 @@
     <string name="daily_desafios">DailyUI Desafios</string>
     <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
     <string name="criar_conta">Criar Conta</string>
+
     <string name="gostaria_receber_newsletter">Gostaria de receber newsletter e outras informações
     promocionais."></string>
     <string name="cadastrar">Cadastrar</string>
@@ -10,4 +11,12 @@
     <string name="numero_cartao_credito">N do cartão de crédito</string>
     <string name="cvc">CVC</string>
     <string name="confirme_sua_compra">Confirme sua compra</string>
+
+    <string name="além_do_horizonte_quântico">Além do Horizonte Quântico</string>
+    <string name="uma_viagem_atraves_do_tempo">Uma viagem através do tempo e do espaço que transformará sua percepção</string>
+    <string name="de_john_doe">De John Doe</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.</string>
+    <string name="ficção_científica">Ficção científica</string>
+    <string name="adquira_seu_exemplar">Adquira já o seu exemplar</string>
+    <string name="leia_a_prévia">Leia a prévia</string>
 </resources>

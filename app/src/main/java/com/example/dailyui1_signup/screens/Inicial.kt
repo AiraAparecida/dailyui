@@ -47,6 +47,36 @@ fun Inicial(navController: NavController) {
                 Text("Dia 2 - CreditCard")
             }
         }
+
+        Row {
+            Button(
+                onClick = {
+                    navController.navigate("LandingPage")
+                },
+            ) {
+                Text("Dia 3 - LandingPage")
+            }
+        }
+
+        Row {
+            Button(
+                onClick = {
+                    navController.navigate("")
+                },
+            ) {
+                Text("Dia  - ")
+            }
+        }
+
+        Row {
+            Button(
+                onClick = {
+                    navController.navigate("")
+                },
+            ) {
+                Text("Dia  - ")
+            }
+        }
     }
 }
 
