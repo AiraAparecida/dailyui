@@ -36,8 +36,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.example.dailyui1_signup.R
 import com.example.dailyui1_signup.components.InputDateField
 import com.example.dailyui1_signup.components.InputNumberCardField
@@ -86,7 +88,7 @@ fun CreditCard(navController: NavHostController) {
         ) {
             Image(
                 painter = painterResource(id = R.drawable.cartaocredito),
-                contentDescription = "cartqo de credito",
+                contentDescription = "cartao de credito",
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(90.dp)
@@ -131,5 +133,12 @@ fun CreditCard(navController: NavHostController) {
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun CreditCardPreview() {
+    val navController = rememberNavController()
+    CreditCard(navController = navController)
 }
 
