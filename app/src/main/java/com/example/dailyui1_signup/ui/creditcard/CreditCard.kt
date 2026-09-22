@@ -1,4 +1,4 @@
-package com.example.dailyui1_signup.screens
+package com.example.dailyui1_signup.ui.creditcard
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement

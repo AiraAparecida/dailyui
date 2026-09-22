@@ -1,4 +1,4 @@
-package com.example.dailyui1_signup.screens
+package com.example.dailyui1_signup.ui.signup
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -19,4 +19,8 @@
     <string name="ficção_científica">Ficção científica</string>
     <string name="adquira_seu_exemplar">Adquira já o seu exemplar</string>
     <string name="leia_a_prévia">Leia a prévia</string>
+
+    <string name="titulo">Titulo</string>
+    <string name="buscar...">Buscar...</string>
+
 </resources>
